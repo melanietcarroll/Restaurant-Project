@@ -1,0 +1,220 @@
+<!DOCTYPE>
+<!--
+Name: Melanie Carroll
+Date created: 8/31/20
+Most recent revision: 9/23/20
+-->
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<p>Contact Us</p>
+<title>Crunch Calzones</title>
+<link href="styles/restaurantStyles.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Cinzel Decorative' rel='stylesheet'>
+
+<hr/>
+<style>
+h1 {
+    font-family: 'Cinzel Decorative';font-size: 60px;
+}
+
+
+.nav-item{
+  font-size: 17px;
+}  
+
+.nav-item a:hover {
+    font-weight: bold;
+}
+.nav-item a:visited {
+    color: #81B29A;
+}
+</style>
+</head>
+
+<body>
+
+
+
+<h1 style="text-align:center;">Crunch Calzones</h1>
+<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+</header>
+<nav> <!-- Home Menu Contact US -->
+<ul class="nav nav-pills">
+  <li class="nav-item">
+    <a class="nav-link active text-dark" href="restaurant-home.html"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+  <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+</svg></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-dark mx-4" href="restaurant-menu.html">Menu</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-dark p-0 my-2" href="restaurant-contact-us.html">Contact Us</a>
+  </li>
+  
+</ul>
+</nav>
+<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+
+<form name="contactForm" onsubmit="return validateItems();">
+  <div class="form-group row font-weight-bold" action="submit.html" method="POST">
+    <label for="fullname" class="col-sm-4 col-form-label text-right">Name:</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" name="fullname" id="fullname">
+    </div>
+  </div>
+  <div class="form-group row font-weight-bold">
+    <label for="email" class="col-sm-4 col-form-label text-right">Email:</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" name="email" id="email">
+    </div>
+  </div>
+  <div class="form-group row font-weight-bold">
+    <label for="phone" class="col-sm-4 col-form-label text-right">Phone:</label>
+    <div class="col-sm-4">
+      <input type="number" class="form-control" name="phone" id="phone">
+    </div>
+  </div>
+
+
+  
+
+<!--Drop-down element-->
+
+<div class="control-group row">
+     <label for="form-select" class="col-sm-4 col-form-label text-right">Reason for Inquiry:</label>
+          <div class="col-sm-4">
+          <select name="form-select" class="form-control" id="form-select">
+          <option selected>Catering</option>
+          <option value="party">Private Party</option>
+          <option value="feedback">Feedback</option>
+          <option value="other">Other</option>
+          </select>
+         </div>
+</div>
+
+
+<div class="form-group row mt-3">
+  <label for="info" class="col-sm-4 col-form-label text-right">Additional Information:</label>
+  <div class="col-sm-4">
+  <textarea class="form-control" rows="5" id="info"></textarea>
+</div>
+</div> 
+
+<!--radio buttons-->
+
+<fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-4 text-right">Have you been to the restaurant?</legend>
+      <div class="col-sm-4">
+        <div class="form-check-inline">
+          <input class="form-check-input mt-2" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+          <label class="form-check-label mt-2" for="gridRadios1">
+           No
+          </label>
+        </div>
+        <div class="form-check-inline">
+          <input class="form-check-input mt-2" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+          <label class="form-check-label mt-2" for="gridRadios2">
+           Yes
+          </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+
+
+
+  <div class="form-group row">
+    <div class="col-sm-4 text-right">Best days to contact you:</div>
+    <div class="col-sm-4">
+      <div class="form-check-inline">
+        <input class="form-check-input" type="checkbox" id="Monday">
+        <label class="form-check-label" for="Mon">
+          M
+        </label>
+      </div>
+      <div class="form-check-inline">
+        <input class="form-check-input" type="checkbox" id="Tuesday">
+        <label class="form-check-label" for="Tues">
+          T
+        </label>
+      </div>
+      <div class="form-check-inline">
+        <input class="form-check-input" type="checkbox" id="Wednesday">
+        <label class="form-check-label" for="Wed">
+          W
+        </label>
+      </div>
+      <div class="form-check-inline">
+        <input class="form-check-input" type="checkbox" id="Thursday">
+        <label class="form-check-label" for="Thurs">
+          Th
+        </label>
+      </div>
+      <div class="form-check-inline">
+        <input class="form-check-input" type="checkbox" id="Friday">
+        <label class="form-check-label" for="Fri">
+         F
+        </label>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="form-group row">
+    <div class="col-sm-12 text-center">
+      <button type="submit" class="btn btn-secondary">Send Request</button>
+    </div>
+  </div>
+</form>
+
+<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+<footer>
+<p style="text-align:center;">8990 St Mary's Way, Annapolis, Maryland 21411</p>
+<p style="text-align:center;">(410)675-2848</p>
+</footer>
+<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+<script>
+
+function validateItems() {
+    var fullname = document.forms["contactForm"]["fullname"].value;
+    var email = document.forms["contactForm"]["email"].value;
+    var phone = document.forms["contactForm"]["phone"].value;
+
+    if (fullname == "") {
+        alert("Please provide a name.");
+        return false;
+    }
+   if (email == "") {
+       alert("Please provide an email.");
+       return false;
+   }
+   if (phone == "" || isNaN(phone)) {
+       alert("Please provide a phone number.");
+       return false;
+   }else {
+     alert("Thank you for your interest, we will contact you soon.")
+   }
+  
+   // We are returning false so that the form doesn't submit 
+   // and so that we can see the results
+   return false;
+}
+</script>
+
+
+<noscript>Your browser does not support JavaScript!</noscript>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

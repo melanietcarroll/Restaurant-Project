@@ -1,0 +1,175 @@
+<!DOCKTYPE>
+<!--
+Name: Melanie Carroll
+Date created: 8/31/20
+Most recent revision: 9/23/20
+-->
+
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<p>Menu</p>
+<hr/>
+<title>Menu</title>
+<link href="styles/restaurantStyles.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Cinzel Decorative' rel='stylesheet'>
+
+
+<style>
+h1 {
+    font-family: 'Cinzel Decorative';font-size: 60px;
+}
+th,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+/*table {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 25px;
+}*/
+tr:nth-child(odd){
+    background-color: #bed7cb;
+}
+tr{
+    height: 30px;
+    background-color: #9ac1ae;
+    font-size: 18px;
+}
+th{
+    color: #3D405B;
+    font-size: 20px;
+}
+
+h2{
+    margin-top: 30px;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #E075A5F;
+}
+
+#bevTable{
+  width:65%;
+  margin: auto;
+}
+.nav-item{
+  font-size: 17px;
+}  
+
+.nav-item a:hover {
+    font-weight: bold;
+}
+.nav-item a:visited {
+    color: #81B29A;
+}
+</style>
+</head>
+
+<body>
+<header>
+<h1 style="text-align:center;">Crunch Calzones</h1>
+</header>
+<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+<nav> <!-- Home Menu Contact US -->
+<ul class="nav nav-pills">
+  <li class="nav-item">
+    <a class="nav-link active text-dark" href="restaurant-home.html"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+  <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+</svg></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-dark mx-4" href="restaurant-menu.html">Menu</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-dark p-0 my-2" href="restaurant-contact-us.html">Contact Us</a>
+  </li>
+  
+</ul>
+  
+</nav>
+<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+<h2 class="text-center"><strong>Made to Order Pizzas and Calzones</strong></h2>
+<div class="container">
+
+<table class="table">
+
+<thead class="thead-dark">
+<tr scope="col" class="table-active text-center">
+<th scope="col" class="col-xs-4" class="p-3">BBQ Chicken with Smoked Mozzarella</th>
+<th scope="col" class="col-xs-4 align-middle" class="p-3">Margherita Pizza</th>
+<th scope="col" class="col-xs-4 align-middle" class="p-3">Hawaiian</th>
+</tr>
+</thead>
+
+<tr scope="row">
+<td class="text-center text-wrap">Rotisserie Chicken with smoked mozzarella cheese and fresh cilantro with our homemade BBQ sauce.<br />$12.99</td>
+<td class="text-center text-wrap align-middle">Fresh sliced mozzarella cheese with fresh basil and homemade tomato sauce.<br />$8.99</td>
+<td class="text-center text-wrap">Fresh mozzarella, ham, pineapple with fresh basil and homemade tomato sauce.<br />$10.99</td>
+</tr>
+
+<thead class="thead-dark">
+<tr scope="col" class="table-active text-center">
+<th scope="col" class="col-xs-4" class="p-3">Build Your Own</th>
+<th scope="col" class="col-xs-4">Mediterranean</th>
+<th scope="col" class="col-xs-4">Pizza Calabrese</th>
+</tr>
+</thead>
+
+
+<tr scope="row">
+<td class="text-center text-wrap">Choose from a variety of fresh, organic vegetables and meats with our homemade tomato sauce.<br />$9.99</td>
+<td class="text-center text-wrap">Goat cheese, fresh tomatoes, kalamata olives, artichoke hearts with fresh basil and homemade tomato sauce.<br />$9.99</td>
+<td class="text-center text-wrap">Fresh mozzarella cheese, spicy italian salami, with fresh basil and homemade tomato sauce.<br />$10.99</td>
+</tr>
+
+
+</table>
+
+<table class="table" id="bevTable">
+<thead class="thead-dark"> 
+<tr scope="row">
+<th scope="row" colspan="2" class="text-center">Beverages</th>
+</tr>
+</thead>
+
+<tr>
+<td class="text-center text-wrap">Root Beer</td>
+<td class="text-center text-wrap">$3.00</td>
+</tr>
+<tr>
+<td class="text-center text-wrap">Bottled Water</td>
+<td class="text-center text-wrap">$1.25</td>
+</tr>
+<tr>
+<td class="text-center text-wrap">Lemonade</td>
+<td class="text-center text-wrap">$1.00</td>
+</tr>
+<tr>
+<td class="text-center text-wrap">Iced Tea</td>
+<td class="text-center text-wrap">$1.25</td>
+</tr>
+
+</table>
+</div>
+<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+<footer>
+<p style="text-align:center;">8990 St Mary's Way, Annapolis, Maryland 21411</p>
+<p style="text-align:center;">(410)675-2848</p>
+</footer>
+<noscript>Your browser does not support JavaScript!</noscript>
+
+<hr style="height:2px;border-width:0;color:gray;background-color:gray">>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>
+

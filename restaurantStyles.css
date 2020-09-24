@@ -1,0 +1,20 @@
+/*
+Creator: Melanie Carroll
+Date created: 9/4/20
+Date last modified: 9/4/20
+*/
+
+body {
+    background-color: #F4F1DE;
+    font-family: arial, helvetica, sans-serif;
+    color: #3D405B;
+    margin: auto;
+}
+header, footer {
+    background-color: #81B29A;
+    color: #3D405B;
+    height: 100px;
+    text-align: center;
+    padding: 30px 10px 20px 10px;
+}
+
